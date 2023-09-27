@@ -1,0 +1,96 @@
+[26-Sep-2023 12:11:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:25:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:30:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:32:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:32:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:33:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:45:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:46:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:47:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:47:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:48:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293
+[26-Sep-2023 12:48:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Symfony\Component\Process\proc_get_status() in /home/stonesmi/app/vendor/symfony/process/Process.php:1293
+Stack trace:
+#0 /home/stonesmi/app/vendor/symfony/process/Process.php(840): Symfony\Component\Process\Process->updateStatus()
+#1 /home/stonesmi/app/vendor/symfony/process/Process.php(886): Symfony\Component\Process\Process->isRunning()
+#2 /home/stonesmi/app/vendor/symfony/process/Process.php(213): Symfony\Component\Process\Process->stop()
+#3 [internal function]: Symfony\Component\Process\Process->__destruct()
+#4 {main}
+  thrown in /home/stonesmi/app/vendor/symfony/process/Process.php on line 1293

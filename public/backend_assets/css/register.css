@@ -1,0 +1,214 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.tabs_cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: fit-content; */
+  gap: 1px;
+  direction: rtl;
+  border: 3px solid rgba(0, 0, 0, 0.267);
+  border-radius: 10rem;
+  padding: 0;
+  /* margin: 10px auto;
+  margin-bottom: 0; */
+  color: black;
+}
+
+
+.tab_switch{
+  /* background-color: green; */
+  /* color: white; */
+  padding: 7px 10px;
+  border-radius: 10rem;
+  flex: 1;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3vw;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.tab_switch:hover{
+  background-color: #14a800;
+  color: white;
+}
+
+.active_tab{
+  background-color: #14a800;
+  color: white;
+}
+
+.hidden_selecet{
+  display: none;
+}
+
+.type_select{
+  padding: 10px;
+  border-radius: 10px;
+  direction: rtl;
+}
+
+.type_select:focus{
+  border-color: #14a800;
+  outline: #14a800;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+.sub_plans_cont{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2vw;
+}
+
+.sub_btn{
+  background-color: transparent !important;
+  color: black !important;
+  font-weight: 600 !important;
+  border: black 1px solid;
+  border-radius: 8px !important;
+}
+
+.subs_card:hover .sub_btn{
+  background-color: black !important;
+  color: white !important;
+   border-color: transparent;
+}
+
+.subs_card{
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  -webkit-box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 .5rem 0.3rem 0 rgba(0, 0, 0, .3);
+  border: 2px solid #00000030;
+  padding: 20px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.subs_card:hover{
+  /* background-color: #255d7c; */
+  background-color: #c3dfff;
+   box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, .25);
+}
+/* .subs_card:hover .plan_title{
+  color: #d3dadf;
+}
+.subs_card:hover .plan_price{
+  color: #fcfdfd;
+}
+.subs_card:hover .plan_disc{
+  color: #fcfdfd;
+}
+.subs_card:hover .hr{
+  border-color: white;
+  border: 1px solid white; 
+}*/
+
+.plan_title{
+  font-size: 2.2vw;
+  font-weight: 700;
+  color: #2d2d2dd1;
+  /* color: #2d2d2d; */
+}
+
+.plan_price{
+  color: black;
+  font-size: 2.9vw;
+  font-weight: 700;
+  margin: 0 auto ;
+}
+
+.plan_disc{
+  /* margin: 0 auto; */
+  text-align: center;
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
+}
+
+.payment_dev{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.payment_btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: 600;
+  width: 60%;
+}
+
+.payment_btn:hover{
+  opacity: 0.7;
+}
+
+.visa_payment{
+  background-color: #1565c0;
+  color: white;
+}
+
+.visa_payment>svg{
+  width: 42px;
+  height: 42px;
+}
+
+
+.stc_payment{
+  background-color: #502C84;
+  color: white;
+
+}
+
+.stc_payment>svg{
+  width: 42px;
+  height: 42px;
+}
+
+.paypal_payment{
+  background-color: transparent;
+  color: #1565c0;
+
+  border: 1px solid rgba(0, 0, 0, 0.300);
+}
+
+.paypal_payment>svg{
+  width: 42px;
+  height: 42px;
+}
+
+.bxl-visa{
+  font-size: 2vw;
+}
+
+.payment_title{
+  margin: 0 auto;
+  font-size: 3vw;
+  margin-bottom: 20px;
+}
+
+.card{
+  border-radius: 12px !important;
+
+}
