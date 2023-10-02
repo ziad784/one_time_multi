@@ -32,7 +32,7 @@
         <!-- inject:css -->
         <link rel="stylesheet" href="{{ url('admin/css/vertical-layout-light/style.css') }}">
         <!-- endinject -->
-        <link rel="shortcut icon" href="{{ url('admin/images/favicon.jpg') }}" />
+        <link rel="shortcut icon" href="{{ url('admin/images/favicon.ico') }}" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 

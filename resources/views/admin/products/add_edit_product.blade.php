@@ -141,12 +141,12 @@
                                     <input type="number" class="form-control" id="product_price" placeholder="{{ __("translation.Enter Product Price")}}" name="product_price" @if (!empty($product['product_price'])) value="{{ $product['product_price'] }}" @else value="{{ old('product_price') }}" @endif> {{-- Repopulating Forms (using old() method): https://laravel.com/docs/9.x/validation#repopulating-forms --}}
                                 </div>
                                 <div class="form-group">
-                                    <label for="product_discount">{{ __("translation.Product Discount")}} (%)</label>
+                                    <label for="product_discount">{{ __("translation.Product Discount")}} </label>
                                     <input type="number"  class="form-control" id="product_discount" placeholder="{{ __("translation.Enter Product Discount")}}" name="product_discount" @if (!empty($product['product_discount'])) value="{{ $product['product_discount'] }}" @else value="{{ old('product_discount') }}" @endif> {{-- Repopulating Forms (using old() method): https://laravel.com/docs/9.x/validation#repopulating-forms --}}
                                 </div>
                                 <div class="form-group">
-                                    <label for="product_weight">{{ __("translation.Product Weight")}} (%)</label>
-                                    <input type="text" class="form-control" id="product_weight" placeholder="{{ __("translation.Enter Product Weight")}}" name="product_weight" @if (!empty($product['product_weight'])) value="{{ $product['product_weight'] }}" @else value="{{ old('product_weight') }}" @endif> {{-- Repopulating Forms (using old() method): https://laravel.com/docs/9.x/validation#repopulating-forms --}}
+                                    <label for="product_weight">{{ __("translation.Product Weight")}} </label>
+                                    <input type="number" class="form-control" id="product_weight" placeholder="{{ __("translation.Enter Product Weight")}}" name="product_weight" @if (!empty($product['product_weight'])) value="{{ $product['product_weight'] }}" @else value="{{ old('product_weight') }}" @endif> {{-- Repopulating Forms (using old() method): https://laravel.com/docs/9.x/validation#repopulating-forms --}}
                                 </div>
 
 
@@ -161,7 +161,7 @@
 
                                 <div class="form-group">
                                     <label for="product_image">{{ __("translation.Product Image")}} ({{ __("translation.Recommended Size")}}: 1000x1000)</label> {{-- Important Note: There are going to be 3 three sizes for the product image: Admin will upload the image with the recommended size which 1000*1000 which is the 'large' size (will store it in 'large' folder), but then we're going to use 'Intervention' package to get another two sizes: 500*500 which is the 'medium' size (will store it in 'medium' folder) and 250*250 which is the 'small' size (will store it in 'small' folder) --}}
-                                    <input type="file" class="form-control" id="product_image" name="product_image">
+                                    <input type="file" accept="image/*" class="form-control" id="product_image" name="product_image">
                                     {{-- Show the admin image if exists --}}
 
 
@@ -173,9 +173,10 @@
                                         <a href="JavaScript:void(0)" class="confirmDelete" module="product-image" moduleid="{{ $product['id'] }}">{{ __("translation.Delete Product Image")}}</a> {{-- Delete the product image from BOTH SERVER (FILESYSTEM) & DATABASE --}}    {{-- Check admin/js/custom.js and web.php (routes) --}}
                                     @endif
                                 </div>
+
                                 <div class="form-group">
-                                    <label for="product_video">{{ __("translation.Product Video")}} ({{ __("translation.Recommended Size")}}: {{ __("translation.Less than")}} 2 MB)</label> {{-- Important Note: Default php.ini file upload Maximum file size is 2MB (If you upload a file with a larger size, it won't be uploaded!). Check upload_max_filesize using phpinfo() method --}}
-                                    <input type="file" class="form-control" id="product_video" name="product_video">
+                                    <label for="product_video">{{ __("translation.Product Video")}} </label> {{-- Important Note: Default php.ini file upload Maximum file size is 2MB (If you upload a file with a larger size, it won't be uploaded!). Check upload_max_filesize using phpinfo() method --}}
+                                    <input type="file" accept="video/*" class="form-control" id="product_video" name="product_video">
                                     {{-- Show the admin image if exists --}}
 
 
@@ -187,6 +188,7 @@
                                         <a href="JavaScript:void(0)" class="confirmDelete" module="product-video" moduleid="{{ $product['id'] }}">{{ __("translation.Delete Product Video")}}</a> {{-- Delete the product video from BOTH SERVER (FILESYSTEM) & DATABASE --}}    {{-- Check admin/js/custom.js and web.php (routes) --}}
                                     @endif
                                 </div>
+   
                                 <div class="form-group">
                                     <label for="description">{{ __("translation.Product Description")}}</label>
                                     <textarea name="description" id="description" class="form-control" rows="3">{{ $product['description'] }}</textarea>

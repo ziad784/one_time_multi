@@ -1,5 +1,11 @@
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer" style="
+
+background: black;
+    padding: 10px;
+    margin-top: 15vh;
+    
+">
     <div class="container">
         <!-- Outer-Footer -->
         {{-- <div class="outer-footer-wrapper u-s-p-y-80">
@@ -33,7 +39,7 @@
             <div class="row">
                 <div class="col-sm">
                     <div class="footer-list">
-                        <h6>{{ __("translation.COMPANY")}}</h6>
+                        <h6 style="color:white">{{ __("translation.COMPANY")}}</h6>
                         <ul>
                             <li>
                                 <a href="{{ url('about-us') }}">{{ __("translation.About Us")}}</a>
@@ -50,7 +56,7 @@
               
                 <div class="col-sm">
                     <div class="footer-list">
-                        <h6>{{ __("translation.ACCOUNT")}}</h6>
+                        <h6 style="color:white">{{ __("translation.ACCOUNT")}}</h6>
                         <ul>
                             <li>
                                 <a href="{{ url('user/account') }}">{{ __("translation.My Account")}}</a>
@@ -63,7 +69,7 @@
                 </div>
                 <div class="col-sm">
                     <div class="footer-list">
-                        <h6>{{ __("translation.Contact")}}</h6>
+                        <h6 style="color:white">{{ __("translation.Contact")}}</h6>
                         <ul>
                             <li>
                                 <i class="fas fa-location-arrow u-s-m-r-9"></i>
@@ -89,47 +95,53 @@
         </div>
         <!-- Mid-Footer /- -->
         <!-- Bottom-Footer -->
+
+        <style>
+            .social-media-list > li{
+                color:white !important > a > i;
+            }
+        </style>
         <div class="bottom-footer-wrapper">
             <div class="social-media-wrapper">
                 <ul class="social-media-list">
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fab fa-facebook-f"></i>
+                        <i  style="color:white" class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fab fa-twitter"></i>
+                        <i  style="color:white" class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fab fa-google-plus-g"></i>
+                        <i style="color:white" class="fab fa-google-plus-g"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fas fa-rss"></i>
+                        <i style="color:white" class="fas fa-rss"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fab fa-pinterest"></i>
+                        <i style="color:white" class="fab fa-pinterest"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fab fa-linkedin-in"></i>
+                        <i style="color:white" class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="#">
-                        <i class="fab fa-youtube"></i>
+                        <i style="color:white" class="fab fa-youtube"></i>
                         </a>
                     </li>
                 </ul>
             </div>
-            <p class="copyright-text">Copyright &copy; 2023
+            <p  style="color:white" class="copyright-text">Copyright &copy; 2023
                 <a target="_blank" rel="nofollow" href="#">   مؤسسه الابداع الماسي </a> | All Right Reserved
             </p>
         </div>

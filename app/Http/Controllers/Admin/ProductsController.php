@@ -101,14 +101,14 @@ class ProductsController extends Controller
             $data = $request->all();
             // dd($data);
 
-
+    
             // Laravel's Validation    // Customizing Laravel's Validation Error Messages: https://laravel.com/docs/9.x/validation#customizing-the-error-messages    // Customizing Validation Rules: https://laravel.com/docs/9.x/validation#custom-validation-rules
             $rules = [
                 'category_id'   => 'required',
                 'product_name'  => 'required', // only alphabetical characters and spaces
-                'product_code'  => 'required|regex:/^\w+$/', // alphanumeric regular expression
-                'product_price' => 'required|numeric',
-                'product_color' => 'required|regex:/^[\pL\s\-]+$/u', // only alphabetical characters and spaces
+                'product_code'  => 'required|', // alphanumeric regular expression
+                'product_price' => 'required|',
+                'product_color' => 'required|', // only alphabetical characters and spaces
             ];
 
             $customMessages = [ // Specifying A Custom Message For A Given Attribute: https://laravel.com/docs/9.x/validation#specifying-a-custom-message-for-a-given-attribute
@@ -212,6 +212,7 @@ class ProductsController extends Controller
                 $vendor_id = Auth::guard('admin')->user()->vendor_id; // Accessing Specific Guard Instances: https://laravel.com/docs/9.x/authentication#accessing-specific-guard-instances    // Get the `vendor_id` column value of the `admins` table through Retrieving The Authenticated User (the logged in user) using the 'admin' guard which we defined in auth.php page: https://laravel.com/docs/9.x/authentication#retrieving-the-authenticated-user
                 $admin_id  = Auth::guard('admin')->user()->id; // Accessing Specific Guard Instances: https://laravel.com/docs/9.x/authentication#accessing-specific-guard-instances    // Get the `id` column value of the `admins` table through Retrieving The Authenticated User (the logged in user) using the 'admin' guard which we defined in auth.php page: https://laravel.com/docs/9.x/authentication#retrieving-the-authenticated-user
 
+
                 $product->admin_type = $adminType;
                 $product->admin_id   = $admin_id;
 
@@ -228,6 +229,7 @@ class ProductsController extends Controller
             $bussniess = VendorsBusinessDetail::where("vendor_id",$vendor_id)->get();
 
             if(count($bussniess) > 0 || Auth::guard('admin')->user()->type== "superadmin"){
+            
                 if (empty($data['product_discount'])) {
                     $data['product_discount'] = 0;
                 }
@@ -271,6 +273,7 @@ class ProductsController extends Controller
                 $product->status = 1;
     
     
+            
                 $product->save(); // Save all data in the database
     
                 return redirect('admin/products')->with('success_message', $message);

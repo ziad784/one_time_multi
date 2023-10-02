@@ -114,7 +114,7 @@ $notificationsunRead = \App\Models\notifications::where("is_read",0)->get();
             ">
 
                     @foreach ($notifications as $notification)
-                    @if ($notification["type"] == "1")
+                    @if ($notification["type"] == "1" && $notification["is_read"] != "1")
                     <div> <a href="/admin/admins/vendor">{{ __("translation.New vendor registered")}}</a></div>
                     @endif
                   

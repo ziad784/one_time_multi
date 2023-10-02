@@ -485,11 +485,11 @@ class ProductsController extends Controller
 
 
             // Check if the selected product `product_id` with that selected `size` have available `stock` in `products_attributes` table
-            $getProductStock = \App\Models\ProductsAttribute::getProductStock($data['product_id'], $data['size']);
+            // $getProductStock = \App\Models\ProductsAttribute::getProductStock($data['product_id']);
 
-            if ($getProductStock < $data['quantity']) { // if the `stock` available (in `products_attributes` table) is less than the ordered quantity by user (the quantity that the user desires)
-                return redirect()->back()->with('error_message', 'Required Quantity is not available!');
-            }
+            // if ($getProductStock < $data['quantity']) { // if the `stock` available (in `products_attributes` table) is less than the ordered quantity by user (the quantity that the user desires)
+            //     return redirect()->back()->with('error_message', 'Required Quantity is not available!');
+            // }
 
 
             // Note: If the user is not authenticated/logged in (guest), we'll use their `session_id` to enable users to Add to Cart (in `carts` table) WITHOUT LOGIN, then after that, once the user logins/gets authenticated, we'll use their `user_id` (NOT their #session_id) in `carts` table    // When user logins, their `user_id` gets updated (check userLogin() method in UserController.php)    

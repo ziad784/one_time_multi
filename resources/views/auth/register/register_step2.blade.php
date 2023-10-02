@@ -7,6 +7,7 @@
     @include('backend.includes.favicon')
     @include('backend.includes.css')
     <link rel="stylesheet" href="{{ asset('backend_assets/css/register.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 </head>
 <body class="bg-login">
     <div class="wrapper">
@@ -42,12 +43,15 @@
                                             
                                             </div>
                                             
-                                            <div class="col-sm-12">
+                                            <div class="col-sm-12" style="display:flex;flex-direction: column;">
                                                 <label for="inputName" class="form-label">{{ __("translation.Phone Number")}}</label>
+
+                                           
                                                 <input name="name" type="number" class="form-control" id="phone_num"
                                                     placeholder="{{ __("translation.Phone Number")}}" autocomplete="name" value="{{old('name')}}"
                                                     autofocus
                                                     required>
+                                             
                                             
                                             </div>
 
@@ -98,10 +102,55 @@
          </div>
    </div>
 
+
+   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+  
+  const input = document.querySelector("#phone_num");
+const button = document.querySelector("#btn");
+const errorMsg = document.querySelector("#error-msg");
+const validMsg = document.querySelector("#valid-msg");
+
+// here, the index maps to the error code returned from getValidationError - see readme
+const errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
+
+// initialise plugin
+const iti = window.intlTelInput(input, {
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+});
+
+const reset = () => {
+  input.classList.remove("error");
+  errorMsg.innerHTML = "";
+  errorMsg.classList.add("hide");
+  validMsg.classList.add("hide");
+};
+
+// on click button: validate
+button.addEventListener('click', () => {
+  reset();
+  if (input.value.trim()) {
+    if (iti.isValidNumber()) {
+      validMsg.classList.remove("hide");
+    } else {
+      input.classList.add("error");
+      const errorCode = iti.getValidationError();
+      errorMsg.innerHTML = errorMap[errorCode];
+      errorMsg.classList.remove("hide");
+    }
+  }
+});
+
+// on keyup / change flag: reset
+input.addEventListener('change', reset);
+input.addEventListener('keyup', reset);
+</script>
    <script>
 
             window.onload=()=>{
                 localStorage.setItem("vendor","تجاره الالكتروني")
+
+            
                 
                 // if(localStorage.getItem("vendor_type")){
                 //         // window.location.href= './register/register_step2.blade.php'

@@ -322,7 +322,7 @@
                                 <div class="sizes u-s-m-b-11" style="margin-top: 20px">
                                     <span>{{ __("translation.Available Size")}}:</span>
                                     <div class="size-variant select-box-wrapper">
-                                        <select class="select-box product-size" id="getPrice" product-id="{{ $productDetails['id'] }}" name="size" required> {{-- Check front/js/custom.js file --}}
+                                        <select class="select-box product-size" id="getPrice" product-id="{{ $productDetails['id'] }}" name="size" > {{-- Check front/js/custom.js file --}}
 
 
 
@@ -393,12 +393,16 @@
                         <div class="tab-content">
                             <!-- Description-Tab -->
                             <div class="tab-pane fade active show" id="video">
-                                <div class="description-whole-container">
+                                <div class="description-whole-container" style="max-width:unset !important">
 
 
 
                                     @if ($productDetails['product_video'])
-                                        <video controls>
+                                        <video controls style="
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+">
                                             <source src="{{ url('front/videos/product_videos/' . $productDetails['product_video']) }}" type="video/mp4">
                                         </video>
                                     @else
